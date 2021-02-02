@@ -18,19 +18,21 @@ Note: the following steps use ER random graph as an example. To perform experime
 
 	1.1 data generation
 		in ./dataset/ER/code:
+		
 		```
 		./run_T.sh 1000 SIR 2.5 0.4 0 30 
 		```
 		
-		Note: see run_T.sh for argument info 
+	Note: see run_T.sh for argument info 
 
 	1.2 run model 
+	
 		```
 		./submit_SIR_T.sh 0 
 		```
 		
-		Note: the 1st argument 0 indicating graph id 0, see submit_SIR_T.sh for details. 
-		Note: the last line in the output is top-1 acc, mrr, hit@5, hit@10, hit@20
+	Note: the 1st argument 0 indicating graph id 0, see submit_SIR_T.sh for details. 
+	Note: the last line in the output is top-1 acc, mrr, hit@5, hit@10, hit@20
 
 
 2. SIR simulations with arbitrary length on ER 1000 nodes, train and test on R0=2.5, gamma=0.4 
